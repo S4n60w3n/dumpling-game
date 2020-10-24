@@ -1,0 +1,29 @@
+<svg width="165.17mm" height="176.41mm" version="1.1" viewBox="0 0 165.17 176.41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="a" x1="267.26" x2="260.44" y1="102.2" y2="282.58" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff0dd" offset="0"/>
+   <stop stop-color="#ecd4b4" offset="1"/>
+  </linearGradient>
+ </defs>
+ <g transform="translate(157.08 -67.293)">
+  <g transform="translate(26.667 -243.32)">
+   <g transform="matrix(0 -1.1973 1.1973 0 -182.76 678.68)">
+    <path transform="translate(-27.552 -64.308)" d="m251.7 71.079c5.262-8.0045 7.6849-6.1238 11.238-0.46678 8.9983-11.815 13.447-5.6966 17.548 1.7893 4.3149-1.996 8.2175-6.4151 11.658 3.7914 5.145 15.262 13.653 27.829 26.319 36.87 15.572 11.114 22.025 46.608 9.0765 68.434-9.1004 15.339-34.355 19.469-61.559 19.611-28.182 0.14757-52.86-9.079-67.759-26.011-13.822-15.708-14.861-43.238 4.0728-62.623 15.394-15.761 36.942-22.436 49.405-41.395z" fill="url(#a)" stroke="#85663c"/>
+    <g transform="translate(132.14 -64.775)" fill="none" stroke="#85663c" stroke-linecap="round" stroke-opacity=".50924" stroke-width="1.5">
+     <path d="m86.037 96.637c7.7444-5.179 12.678-11.729 14.804-19.648"/>
+     <path d="m107.57 102.67c0.0816-0.51384 2.1343-24.089 2.1343-24.089"/>
+     <path d="m118.95 78.946c1.9191 8.1376 3.2076 16.359 11.038 23.71"/>
+    </g>
+    <circle transform="translate(-27.552 -64.308)" cx="279.69" cy="142.51" r="3.9382" fill="#85663c" stop-color="#000000" style="mix-blend-mode:normal"/>
+    <circle transform="translate(-27.552 -64.308)" cx="234.12" cy="139.36" r="3.9382" fill="#85663c" stop-color="#000000" style="mix-blend-mode:normal"/>
+    <ellipse transform="matrix(.99879 .049111 .011436 .99993 -27.552 -64.308)" cx="287.75" cy="143.82" rx="12.153" ry="4.2328" fill="#fb0b8a" fill-opacity=".17351" stop-color="#000000"/>
+    <ellipse transform="matrix(.99879 .049111 .011436 .99993 -27.552 -64.308)" cx="219.31" cy="140.72" rx="12.153" ry="4.2328" fill="#fb0b8a" fill-opacity=".17351" stop-color="#000000"/>
+    <g fill="none" stroke="#85663c">
+     <path d="m211.57 89.552c11.569 10.842 21.352 8.933 30.747 4.2495" stroke-linecap="round"/>
+     <path d="m239.14 129.08c5.5151-3.008 15.494-4.5198 19.701-7.8739s2.6426-8.5505-12.472-3.4252"/>
+     <path d="m215.93 124.28c-16.79 1.7018-24.753-8.4373-23.046-13.66 1.7074-5.2224 6.4428 1.6992 14.242 3.8431"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
