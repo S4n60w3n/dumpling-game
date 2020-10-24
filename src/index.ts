@@ -1,7 +1,8 @@
 import Phaser from 'phaser'
 
-import { Menu } from './scenes/menu'
+import { Menu } from './scenes/Menu'
 import { SCREEN_WIDTH } from './utils/contants'
+import {GameScene} from "./scenes/GameScene";
 
 const config = {
   type: Phaser.AUTO,
@@ -19,7 +20,7 @@ const config = {
     mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT,
     autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-  scene: Menu,
+  scene: [Menu, GameScene]
 }
 
 const game = new Phaser.Game(config)

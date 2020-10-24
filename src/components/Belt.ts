@@ -5,6 +5,7 @@ import { IMAGES, SCREEN_WIDTH } from '../utils/contants'
 const WIDTH = 368
 const AMOUNT = 8
 const SPEED = 0.3
+const OFFSET = 500
 const RECYCLE_TIME = 1000
 
 export class Belt {
@@ -13,12 +14,16 @@ export class Belt {
   recycleTime = 0
   container: Phaser.GameObjects.Container
 
-  constructor(scene: Phaser.Scene) {
+  constructor(scene: Phaser.Scene, plate: boolean = false) {
     this.scene = scene
-    this.container = this.scene.add.container(-500, 0)
+    this.container = this.scene.add.container(-OFFSET, 0)
     for (let i = 0; i < AMOUNT; i += 1) {
       const sprite = this.scene.add.image(WIDTH * i, 360, IMAGES.beltPart)
       sprite.setOrigin(0, 0.5)
+      this.container.add(sprite)
+    }
+    if (plate) {
+      const sprite =this.scene.add.image(OFFSET + 300, 360, IMAGES.plate)
       this.container.add(sprite)
     }
   }

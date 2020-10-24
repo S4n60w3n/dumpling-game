@@ -1,17 +1,17 @@
-<svg width="495.22mm" height="495.22mm" version="1.1" viewBox="0 0 495.22 495.22" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="158.75mm" height="158.75mm" version="1.1" viewBox="0 0 158.75 158.75" xmlns="http://www.w3.org/2000/svg">
  <defs>
   <linearGradient id="a" x1="1236" x2="2150.2" y1="768.54" y2="767.7" gradientUnits="userSpaceOnUse">
    <stop stop-color="#1b0000" offset="0"/>
    <stop stop-color="#4d4d4d" offset="1"/>
   </linearGradient>
-  <linearGradient id="b" x1="2820.5" x2="3032.1" y1="450.53" y2="446.92" gradientTransform="matrix(1.4149 0 0 1.4149 -2174.4 107.67)" gradientUnits="userSpaceOnUse">
+  <linearGradient id="b" x1="2820.5" x2="3032.1" y1="450.53" y2="446.92" gradientTransform="matrix(1.4149,0,0,1.4149,-2174.4,107.67)" gradientUnits="userSpaceOnUse">
    <stop stop-color="#cfcfcf" offset="0"/>
    <stop stop-color="#fff" offset="1"/>
   </linearGradient>
  </defs>
- <g transform="translate(278.17 186.74)">
-  <g transform="translate(26.667 -243.32)">
-   <g transform="matrix(1 0 0 -1 -2137.5 -446.29)">
+ <g transform="matrix(.32056 0 0 .32056 89.183 59.862)">
+  <g transform="translate(26.667,-243.32)">
+   <g transform="matrix(1,0,0,-1,-2137.5,-446.29)">
     <g transform="matrix(.94866 0 0 .94866 171.06 -49.754)">
      <circle transform="scale(1,-1)" cx="2012.5" cy="738.65" r="261.01" fill="url(#a)" stop-color="#000000"/>
      <circle transform="scale(1,-1)" cx="2012.5" cy="738.65" r="200.78" fill="url(#b)" stop-color="#000000"/>
