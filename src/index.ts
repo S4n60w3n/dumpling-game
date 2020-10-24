@@ -1,6 +1,7 @@
-import Phaser from "phaser";
-import { Menu } from "./scenes/menu";
-import {SCREEN_WIDTH} from "./utils/contants";
+import Phaser from 'phaser'
+
+import { Menu } from './scenes/menu'
+import { SCREEN_WIDTH } from './utils/contants'
 
 const config = {
   type: Phaser.AUTO,
@@ -11,14 +12,14 @@ const config = {
     default: 'arcade',
     arcade: {
       gravity: { y: 0 },
-      debug: true
-    }
+      debug: true,
+    },
   },
   scale: {
-    mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT ,
-    autoCenter: Phaser.Scale.CENTER_BOTH
+    mode: Phaser.Scale.WIDTH_CONTROLS_HEIGHT,
+    autoCenter: Phaser.Scale.CENTER_BOTH,
   },
-  scene: Menu
-};
+  scene: Menu,
+}
 
-const game = new Phaser.Game(config);
+const game = new Phaser.Game(config)
