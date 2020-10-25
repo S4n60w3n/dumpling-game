@@ -5,10 +5,9 @@ import beltPart from '../assets/beltPart.svg'
 import dumpling from '../assets/dumpling.svg'
 import dumpling2 from '../assets/dumpling2.svg'
 import dumpling3 from '../assets/dumpling3.svg'
-
-import {IMAGES, SCENES} from '../utils/contants'
+import { IMAGES, SCENES } from '../utils/contants'
 import { Belt } from '../components/Belt'
-import {MenuDumpling} from "../components/MenuDumpling";
+import { MenuDumpling } from '../components/MenuDumpling'
 
 export class Menu extends Phaser.Scene {
   belt!: Belt

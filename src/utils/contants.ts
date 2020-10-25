@@ -14,5 +14,5 @@ export const IMAGES = {
 }
 export const SCENES = {
   menu: 'menu',
-  game: 'game'
+  game: 'game',
 }

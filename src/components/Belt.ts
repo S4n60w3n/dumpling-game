@@ -23,7 +23,7 @@ export class Belt {
       this.container.add(sprite)
     }
     if (plate) {
-      const sprite =this.scene.add.image(OFFSET + 300, 360, IMAGES.plate)
+      const sprite = this.scene.add.image(OFFSET + 300, 360, IMAGES.plate)
       this.container.add(sprite)
     }
   }

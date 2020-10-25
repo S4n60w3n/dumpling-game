@@ -1,4 +1,5 @@
 import Phaser from 'phaser'
+
 import { IMAGES, SCENES, SCREEN_HEIGHT, SCREEN_WIDTH } from '../utils/contants'
 
 const SPEED = 300
@@ -34,8 +35,15 @@ export class Dumpling {
     })
   }
 
+  stop() {
+    ;(this.image.body as Phaser.Physics.Arcade.Body).setVelocityY(0)
+  }
+
   onOutOfPlate = (fn: () => void) => {
-    if (this.image.y <= PLATE_BOUNDARIES || this.image.y >= SCREEN_HEIGHT - PLATE_BOUNDARIES) {
+    if (
+      this.image.y <= PLATE_BOUNDARIES ||
+      this.image.y >= SCREEN_HEIGHT - PLATE_BOUNDARIES
+    ) {
       fn()
     }
   }

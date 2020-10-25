@@ -1,5 +1,6 @@
 import Phaser from 'phaser'
-import {IMAGES, SCENES, SCREEN_HEIGHT, SCREEN_WIDTH} from '../utils/contants'
+
+import { IMAGES, SCENES, SCREEN_HEIGHT, SCREEN_WIDTH } from '../utils/contants'
 
 export class MenuDumpling {
   scene: Phaser.Scene
