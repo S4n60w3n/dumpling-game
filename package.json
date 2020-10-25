@@ -4,11 +4,12 @@
   "description": "Simple Phaser 3 game",
   "main": "src/index.ts",
   "scripts": {
-    "tsc": "tsc",
+    "tsc": "tsc --build tsconfig.json",
     "lint": "eslint --ext .ts,.tsx,.js,.jsx .",
     "lint:fix": "npm run lint -- --fix",
     "build": "webpack --config webpack/prod.js ",
-    "start": "webpack-dev-server --config webpack/base.js --open"
+    "start": "webpack-dev-server --config webpack/base.js --open",
+    "deploy": "vercel"
   },
   "author": "Bogdan Sikora <bogdan@arokis.me>",
   "license": "MIT",
@@ -19,6 +20,7 @@
     "@typescript-eslint/parser": "^4.5.0",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
     "eslint": "^7.12.0",
     "eslint-config-prettier": "^6.14.0",
     "eslint-plugin-import": "^2.22.1",
