@@ -19,6 +19,8 @@ export class Menu extends Phaser.Scene {
     this.add.image(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, IMAGES.table)
     this.belt = new Belt(this)
     new MenuDumpling(this)
+    this.add.text(50, SCREEN_HEIGHT - 100, 'Click on dumpling to start')
+    this.add.text(SCREEN_WIDTH - 350, 100, 'Press any key to switch direction')
   }
 
   update(time: number, delta: number) {
