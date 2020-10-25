@@ -13,7 +13,6 @@ import { Chopsticks } from '../components/Chopsticks'
 import { Dumpling } from '../components/Dumpling'
 import { Score } from '../components/Score'
 
-const SCORE_MULTI = 0.001
 const GAME_OVER_TIMEOUT = 1500
 
 export class GameScene extends Phaser.Scene {
