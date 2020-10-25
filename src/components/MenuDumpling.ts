@@ -21,7 +21,6 @@ export class MenuDumpling {
       this.image.setTexture(IMAGES.dumpling)
     })
     this.image.on('pointerdown', () => {
-      this.image.setTexture(IMAGES.dumpling3)
       this.scene.scene.switch(SCENES.game)
     })
   }

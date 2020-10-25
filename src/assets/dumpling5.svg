@@ -1,15 +1,15 @@
-<svg width="165.17mm" height="176.41mm" version="1.1" viewBox="0 0 165.17 176.41" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="44.156mm" height="47.625mm" version="1.1" viewBox="0 0 44.156 47.625" xmlns="http://www.w3.org/2000/svg">
  <defs>
   <linearGradient id="a" x1="746.52" x2="798.35" y1="28.465" y2="156.06" gradientUnits="userSpaceOnUse">
    <stop stop-color="#fff0dd" offset="0"/>
    <stop stop-color="#ecd4b4" offset="1"/>
   </linearGradient>
  </defs>
- <g transform="translate(157.08 -67.293)">
-  <g transform="translate(26.667 -243.32)">
-   <g transform="matrix(0 -1.1954 1.1954 0 -180.39 1288.6)">
+ <g transform="matrix(.27007 0 0 .27007 42.423 -18.176)">
+  <g transform="translate(26.667,-243.32)">
+   <g transform="matrix(0,-1.1954,1.1954,0,-180.39,1288.6)">
     <path d="m742.05 2.4611c5.262-8.0045 7.1049-3.5731 10.658 2.0839 8.9983-11.815 9.2885-6.3112 13.39 1.1747 4.3149-1.996 5.7576-7.3799 9.1983 2.8266 5.145 15.262 13.653 27.829 26.319 36.87 15.572 11.114 22.025 46.608 9.0765 68.434-9.1004 15.339-34.355 19.469-61.559 19.611-28.182 0.14757-52.86-9.079-67.759-26.011-13.822-15.708-14.861-43.238 4.0728-62.623 15.394-15.761 44.14-23.408 56.603-42.366z" fill="url(#a)" stroke="#85663c"/>
-    <g transform="translate(642.85 -68.114)" fill="none" opacity=".99707" stroke="#85663c" stroke-linecap="round" stroke-opacity=".50924" stroke-width="1.5">
+    <g transform="translate(642.85,-68.114)" fill="none" opacity=".99707" stroke="#85663c" stroke-linecap="round" stroke-opacity=".50924" stroke-width="1.5">
      <path d="m92.207 97.215c7.7444-5.179 12.678-11.729 14.804-19.648"/>
      <path d="m114 101.7c0.0816-0.51384 2.1343-24.089 2.1343-24.089"/>
      <path d="m123.1 77.96c1.9191 8.1376 3.2076 16.359 11.038 23.71"/>

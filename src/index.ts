@@ -1,14 +1,14 @@
 import Phaser from 'phaser'
 
 import { Menu } from './scenes/Menu'
-import { SCREEN_WIDTH } from './utils/contants'
+import {SCREEN_HEIGHT, SCREEN_WIDTH} from './utils/contants'
 import {GameScene} from "./scenes/GameScene";
 
 const config = {
   type: Phaser.AUTO,
   backgroundColor: '#125555',
   width: SCREEN_WIDTH,
-  height: 720,
+  height: SCREEN_HEIGHT,
   physics: {
     default: 'arcade',
     arcade: {

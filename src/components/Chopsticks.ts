@@ -11,19 +11,21 @@ export class Chopsticks {
   scene: Phaser.Scene
   speed: number = 0.3
   recycleIndex = 0
-  recycleTime = 0
+  images: Phaser.GameObjects.Image[] = []
   container: Phaser.GameObjects.Container
 
   constructor(scene: Phaser.Scene, plate: boolean = false) {
     this.scene = scene
     this.container = this.scene.add.container(0, 0)
     for (let i = 0; i < AMOUNT; i += 1) {
-      const sprite = this.scene.add.image(
+      const sprite = this.scene.physics.add.image(
         WIDTH * i + OFFSET,
         this.getPosition(),
         IMAGES.chopstickOpen,
       )
+      sprite.setInteractive()
       this.checkRotation(sprite)
+      this.images.push(sprite)
       this.container.add(sprite)
     }
   }
