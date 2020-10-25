@@ -12,6 +12,9 @@ export const IMAGES = {
   chopstickOpen: 'chopstickOpen',
   chopstickClose: 'chopstickClose',
 }
+export const SOUNDS = {
+  restaurant: 'restaurant',
+}
 export const SCENES = {
   menu: 'menu',
   game: 'game',
