@@ -1,6 +1,11 @@
 import Phaser from 'phaser'
 
-import { IMAGES, SCREEN_WIDTH } from '../utils/contants'
+import {
+  IMAGES,
+  PLATE_CENTER,
+  SCREEN_HEIGHT,
+  SCREEN_WIDTH,
+} from '../utils/contants'
 
 const WIDTH = 368
 const AMOUNT = 8
@@ -18,18 +23,26 @@ export class Belt {
     this.scene = scene
     this.container = this.scene.add.container(-OFFSET, 0)
     for (let i = 0; i < AMOUNT; i += 1) {
-      const sprite = this.scene.add.image(WIDTH * i, 360, IMAGES.beltPart)
+      const sprite = this.scene.add.image(
+        WIDTH * i,
+        SCREEN_HEIGHT / 2,
+        IMAGES.beltPart,
+      )
       sprite.setOrigin(0, 0.5)
       this.container.add(sprite)
     }
     if (plate) {
-      const sprite = this.scene.add.image(OFFSET + 300, 360, IMAGES.plate)
+      const sprite = this.scene.add.image(
+        OFFSET + PLATE_CENTER,
+        SCREEN_HEIGHT / 2,
+        IMAGES.plate,
+      )
       this.container.add(sprite)
     }
   }
 
-  update(delta: number, speed: number) {
-    this.container.x += delta * speed * SPEED
+  update(delta: number) {
+    this.container.x += delta * SPEED
     this.recycleTime += delta
     if (this.recycleTime > RECYCLE_TIME) {
       this.checkRecycle()

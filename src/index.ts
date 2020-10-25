@@ -6,14 +6,13 @@ import { GameScene } from './scenes/GameScene'
 
 const config = {
   type: Phaser.AUTO,
-  backgroundColor: '#125555',
   width: SCREEN_WIDTH,
   height: SCREEN_HEIGHT,
   physics: {
     default: 'arcade',
     arcade: {
       gravity: { y: 0 },
-      debug: false,
+      debug: true,
     },
   },
   scale: {
@@ -23,4 +22,4 @@ const config = {
   scene: [Menu, GameScene],
 }
 
-const game = new Phaser.Game(config)
+new Phaser.Game(config)

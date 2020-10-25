@@ -1,5 +1,6 @@
 export const SCREEN_WIDTH = 1280
 export const SCREEN_HEIGHT = 720
+export const PLATE_CENTER = 300
 export const IMAGES = {
   beltPart: 'beltPart',
   table: 'table',
@@ -9,8 +10,7 @@ export const IMAGES = {
   dumpling3: 'dumpling3',
   dumpling4: 'dumpling4',
   dumpling5: 'dumpling5',
-  chopstickOpen: 'chopstickOpen',
-  chopstickClose: 'chopstickClose',
+  chopstick: 'chopstickOpen',
 }
 export const SOUNDS = {
   restaurant: 'restaurant',

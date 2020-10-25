@@ -1,9 +1,10 @@
 import Phaser from 'phaser'
 
-import { IMAGES, SCENES, SCREEN_HEIGHT, SCREEN_WIDTH } from '../utils/contants'
+import { IMAGES, PLATE_CENTER, SCREEN_HEIGHT } from '../utils/contants'
 
-const SPEED = 300
-const RADIUS = 50
+const SPEED = 0.4
+const X_OFFSET = 20
+const RADIUS = 60
 const PLATE_BOUNDARIES = 100
 
 export class Dumpling {
@@ -14,29 +15,15 @@ export class Dumpling {
   constructor(scene: Phaser.Scene) {
     this.scene = scene
     this.image = this.scene.physics.add.image(
-      300,
+      PLATE_CENTER,
       SCREEN_HEIGHT / 2,
       IMAGES.dumpling3,
     )
     ;(this.image.body as Phaser.Physics.Arcade.Body).setCircle(
       RADIUS,
-      this.image.width / 4,
-      this.image.height / 4,
+      this.image.width / 2 - RADIUS + X_OFFSET,
+      this.image.height / 2 - RADIUS,
     )
-    this.image.setInteractive()
-    this.image.on('pointerdown', () => {
-      if (this.direction <= -1) {
-        this.image.setTexture(IMAGES.dumpling4)
-        this.direction = 1
-      } else {
-        this.image.setTexture(IMAGES.dumpling5)
-        this.direction = -1
-      }
-    })
-  }
-
-  stop() {
-    ;(this.image.body as Phaser.Physics.Arcade.Body).setVelocityY(0)
   }
 
   onOutOfPlate = (fn: () => void) => {
@@ -48,15 +35,17 @@ export class Dumpling {
     }
   }
 
+  update(delta: number) {
+    this.image.y += this.direction * SPEED * delta
+  }
+
   switchDirection() {
     if (this.direction <= -1) {
       this.image.setTexture(IMAGES.dumpling4)
       this.direction = 1
-      ;(this.image.body as Phaser.Physics.Arcade.Body).setVelocityY(SPEED)
     } else {
       this.image.setTexture(IMAGES.dumpling5)
       this.direction = -1
-      ;(this.image.body as Phaser.Physics.Arcade.Body).setVelocityY(-SPEED)
     }
   }
 }
